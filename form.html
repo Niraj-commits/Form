@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <style>
+    /* body{
+          margin: 0px;
+          padding: 0px;
+          background: url('student.jpg');
+          height: 40px;
+      } */
+  </style>
+  <body>
+    <div id="content">
+      <!-- div can be used to break lines to give a single line to any attribute -->
+      <form action="">
+        <fieldset id="Fset">
+          <!-- <legend>Fill The form</legend> -->
+          <!-- legend makes the words to be written in the border -->
+          <h2 id="sform">Student Form</h2>
+          <div id="Uname">
+            <label for="Username" name="username">Username: </label>
+            <input type="text" name="username" id="uname" /><br />
+          </div>
+          <div id="Pword">
+            <label for="Password">Password:</label>
+            <input type="password" name="password" id="pword" /><br />
+          </div>
+
+          <div id="Email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" /><br />
+          </div>
+
+          <div id="Gender">
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="others" /> Others <br />
+          </div>
+
+          <div id="Checkbox">
+            <label for="checkbox">Qualification</label>
+            <input
+              type="checkbox"
+              id="cbox"
+              name="qualification"
+              value="see"
+            />SEE
+            <input
+              type="checkbox"
+              id="cbox"
+              name="qualification"
+              value="+2"
+            />+2
+            <input
+              type="checkbox"
+              id="cbox"
+              name="qualification"
+              value="bachelor"
+            />Bachelor
+          </div>
+          <div id="country">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="nepal">Nepal</option>
+              <option value="usa">Usa</option>
+              <option value="china">China</option>
+            </select>
+          </div>
+          <input type="submit" id="btn" value="submit" /><br />
+        </fieldset>
+        <!-- fieldset creates a field to wrap up the entire form -->
+      </form>
+    </div>
+  </body>
+</html>
